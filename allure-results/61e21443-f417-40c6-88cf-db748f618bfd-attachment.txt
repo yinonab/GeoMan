@@ -1,0 +1,1 @@
+[2021-08-08T15:52:05.304Z] [WARNING] https://geoman.io/_nuxt/c0f7dc3.js 0 Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.
