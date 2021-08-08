@@ -5,6 +5,7 @@ import io.qameta.allure.Attachment;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class DeleteCircleTest extends BaseTest
@@ -18,7 +19,6 @@ public class DeleteCircleTest extends BaseTest
         CirclePage circle = new CirclePage(driver);
         circle.ClickOnCircleTab();
         circle.CrateCircle();
-
     }
     @Attachment
     @Story("DeleteCircle")
@@ -29,7 +29,6 @@ public class DeleteCircleTest extends BaseTest
         CirclePage circle = new CirclePage(driver);
         circle.ClickOnDeleteTab();
         circle.DeleteCircle();
-
     }
 
 }

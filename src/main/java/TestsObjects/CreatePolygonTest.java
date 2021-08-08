@@ -6,6 +6,7 @@ import io.qameta.allure.Attachment;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class CreatePolygonTest extends BaseTest
@@ -18,6 +19,8 @@ public class CreatePolygonTest extends BaseTest
         PolygonPage poly = new PolygonPage(driver);
         poly.ClickOnPolygonTab();
         poly.CratePolygon();
+        Assert.assertTrue(poly.PolygonDisplayed(),"polygon didn't exist");
+
     }
 
 

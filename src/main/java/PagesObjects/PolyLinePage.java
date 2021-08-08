@@ -44,6 +44,13 @@ public void EditPolyLine()
     ClickAndHold(polylinedot);
     DragAndDropXY(map,100,250);
     click(edittab);
-
 }
+    public boolean PolylineDisplayed() {
+        try {
+            WaitElementDosplayed(polyline);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
 }

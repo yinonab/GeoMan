@@ -21,6 +21,6 @@ public class CreateCircleTest extends BaseTest
         CirclePage circle = new CirclePage(driver);
         circle.ClickOnCircleTab();
         circle.CrateCircle();
-
+        Assert.assertTrue(circle.CircleDisplayed(),"circle didn't exist");
     }
 }

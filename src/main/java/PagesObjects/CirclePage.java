@@ -39,4 +39,13 @@ public void DeleteCircle()
     WaitElementDosplayed(circle);
     click(circle);
 }
+    public boolean CircleDisplayed() {
+        try {
+            WaitElementDosplayed(circle);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
 }

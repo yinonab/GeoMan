@@ -65,5 +65,14 @@ public void CratePolygon()
         WaitElementDosplayed(polygon);
         DragAndDropXY(polygon,150,-350);
     }
+    public boolean PolygonDisplayed() {
+        try {
+            WaitElementDosplayed(polygon);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
 
 }
